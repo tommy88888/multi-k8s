@@ -70,7 +70,7 @@ const Fibo = () => {
       {values.values &&
         Object.entries(values.values).map(([key, value], i) => (
           <div key={i}>
-            For index {key} I calculated {value}
+            For index <b>{key}</b> I calculated <b>{value}</b>
           </div>
         ))}
     </div>
