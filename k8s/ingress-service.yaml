@@ -9,8 +9,8 @@ metadata:
 spec:
   # ingressClassName: nginx
   rules:
-    # - host: fibonacci-multi-container-testing.com
-    - http:
+    - host: fibonacci.com
+      http:
         paths:
           - path: /api/?(.*)
             pathType: Prefix
