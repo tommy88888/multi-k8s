@@ -19,7 +19,7 @@ function App() {
             target='_blank'
             rel='noopener noreferrer'
           >
-            fib calculator version 40
+            fib calculator version 41
           </a>
         </header>
         <Routes>
