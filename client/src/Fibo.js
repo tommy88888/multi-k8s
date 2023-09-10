@@ -63,14 +63,14 @@ const Fibo = () => {
         />
         <button>Submit</button>
       </form>
-      <h3>Indexes I have seen:</h3>
+      <h3>History indexes: </h3>
       {renderSeenIndexes()}
       <h3>Calculated Values:</h3>
       {/* {console.log(Object.entries(values))} */}
       {values.values &&
         Object.entries(values.values).map(([key, value], i) => (
           <div key={i}>
-            For index {key} I calculated {value}
+            For index <b>{key}</b> Fibonacci number is: <b>{value}</b>
           </div>
         ))}
     </div>
