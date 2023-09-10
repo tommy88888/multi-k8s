@@ -10,7 +10,7 @@ function App() {
       <div className='App'>
         <header className='App-header'>
           <img src={logo} className='App-logo' alt='logo' />
-          <h1 className='App-link'>fibonacci calculator kubernetes</h1>
+          <h3 className='App-link'>fibonacci calculator kubernetes</h3>
           <Link to='/'>Home</Link>
           <Link to='/otherpage'>Other Page</Link>
         </header>
