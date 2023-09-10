@@ -53,7 +53,7 @@ const Fibo = () => {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <label>Enter your index:</label>
+        <label>Enter your index: </label>
         <input
           type='number'
           max='40'
