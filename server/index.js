@@ -33,7 +33,7 @@ const redis = require('redis');
 const redisClient = redis.createClient({
   host: keys.redisHost,
   port: keys.redisPort,
-  retry_strategy: () => 1000,
+  retry_strategy: () => 5000,
 });
 
 const redisPublisher = redisClient.duplicate();
@@ -58,7 +58,7 @@ app.get('/values/current', async (req, res) => {
 app.post('/values', async (req, res) => {
   const i = req.body.i;
 
-  if (parseInt(i) > 40) {
+  if (parseInt(i) > 1476) {
     return res.status(422).send('Index too high');
   }
 

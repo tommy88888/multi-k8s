@@ -34,8 +34,8 @@ const Fibo = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (i.trim() === '' || i.trim() > 40) {
-      alert('can not be empty or larger than 40');
+    if (i.trim() === '' || i.trim() > 1476) {
+      alert('can not be empty or larger than 1476');
       return;
     } else {
       const res = await axios.post('/api/values', {
@@ -56,7 +56,7 @@ const Fibo = () => {
         <label>Enter your index: </label>
         <input
           type='number'
-          max='40'
+          max='1476'
           min='0'
           value={i}
           onChange={(e) => setI(e.target.value)}

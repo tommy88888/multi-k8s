@@ -11,8 +11,12 @@ function App() {
         <header className='App-header'>
           <img src={logo} className='App-logo' alt='logo' />
           <h3 className='App-link'>fibonacci calculator kubernetes</h3>
-          <Link to='/'>Home</Link>
-          <Link to='/otherpage'>Other Page</Link>
+          <Link className='App-link' to='/'>
+            Home
+          </Link>
+          <Link className='App-link' to='/otherpage'>
+            Other Page
+          </Link>
         </header>
         <Routes>
           <Route exact path='/' element={<Fibo />} />
